@@ -24,6 +24,10 @@ module Jekyll
       self.permalink_style = config['permalink'].to_sym
       self.exclude         = config['exclude'] || []
       self.include         = config['include'] || []
+
+      puts self.exclude
+
+      puts self.include
       self.future          = config['future']
       self.limit_posts     = config['limit_posts'] || nil
 
