@@ -51,10 +51,3 @@ class Date
   end if RUBY_VERSION < '1.9'
 end
 
-class Array
-  # Returns true if path matches against any glob pattern.
-  # Look for more detail about glob pattern in method File::fnmatch.
-  def glob_include?(e)
-    any? { |exp| File.fnmatch?(exp, e) }
-  end
-end
